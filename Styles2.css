@@ -1,6 +1,6 @@
 /* Footer general */
 .footer {
-  background-color: #06b400; /* Fondo oscuro para contraste */
+  background-color: #06b400; /* Fondo oscuro para contraste (verde) */
   color: white;
   padding: 2rem 1rem;
   font-family: "Roboto", sans-serif;
@@ -32,17 +32,20 @@
 /* Enlaces legales */
 .footer-links {
   flex: 1;
-  min-width: 12, 5rem;
+  /* CORREGIDO: Usar punto (.) en lugar de coma (,) para decimales */
+  min-width: 12.5rem;
 }
 
 .footer-links a {
   display: block;
+  /* Color morado/violeta */
   color: #7f00f7e0;
   text-decoration: none;
   margin: 0.3rem 0;
 }
 
 .footer-links a:hover {
+  /* Color rojo al pasar el ratón */
   color: #f30000;
 }
 
@@ -73,5 +76,6 @@
 
   .footer-social img {
     margin-bottom: 0.5rem;
+    /* Se podría añadir: margin-right: 0.5rem; para mantener el espaciado horizontal en móvil. */
   }
 }

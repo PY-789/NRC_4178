@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>HTML + CSS</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="Styles2.css" />
+    <link rel="stylesheet" href="menu_toggle.css" />
+  </head>
+  <body>
+    <nav class="topHeader">
+      <a href="#" class="logo">
+        <img
+          width="50"
+          height="50"
+          src="Imagenes/logo_upc_red.png"
+          alt="Logo UPC"
+        />
+      </a>
+      <!-- BOTÓN HAMBURGUESA -->
+
+      <button class="menu-toggle" aria-label="Abrir menú">
+        &#9776;
+
+        <!-- Ícono de hamburguesa -->
+      </button>
+
+      <ul class="Menu-Horizontal">
+        <li><a href="">Promociones</a></li>
+        <li>
+          <a href="">Soluciones</a>
+          <ul class="Menu-Vertical">
+            <li><a href="">Serv. finacieros</a></li>
+            <li><a href="">jsjsjsjjsjj</a></li>
+          </ul>
+        </li>
+        <li><a href="">Privilegios</a></li>
+        <li><a href="">Canales</a></li>
+        <li><a href="">Contactanos</a></li>
+      </ul>
+    </nav>
+
+    <section class="seccion formulario" id="contactanos">
+      <form action="#" method="POST">
+        <div class="div cont formulario">
+          <div class="campo">
+            <label for="nombre">Nombres completos:</label>
+            <input
+              type="text"
+              id="nombre"
+              name="nombre"
+              placeholder="ingrese sus nombres"
+            />
+          </div>
+
+          <div class="campo">
+            <label for="pais">País:</label>
+            <select id="pais" name="pais">
+              <option value="">Seleccione un país</option>
+              <option value="peru">Perú</option>
+              <option value="argentina">Argentina</option>
+            </select>
+          </div>
+
+          <div class="campo">
+            <label>Intereses</label>
+            <ul class="lista checkbox">
+              <li>
+                <label
+                  ><input type="checkbox" name="Intereses" value="a" />
+                  NOOO</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input type="checkbox" name="Intereses" value="b" />
+                  zzzz</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input type="checkbox" name="Intereses" value="c" /> no se
+                  que poner</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input type="checkbox" name="Intereses" value="d" /> zzz otra
+                  vez</label
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="campo">
+            <label>SEXO</label>
+            <ul class="lista radio">
+              <li>
+                <label
+                  ><input type="radio" name="sexo" value="hombre" />
+                  Masculino</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input type="radio" name="sexo" value="mujer" />
+                  Femenino</label
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="campo">
+            <button type="submit">Enviar Formulario</button>
+          </div>
+        </div>
+      </form>
+    </section>
+    <hr />
+
+    <section id="footer">
+      <footer class="footer">
+        <div class="footer-container">
+          <div class="footer-brand">
+            <img
+              width="50"
+              height="50"
+              src="Imagenes/logo.svg"
+              alt="Logo Universidad de Lima"
+              class="footer-logo"
+            />
+            <p>Universidad de Lima</p>
+            <small>© 2025 Todos los derechos reservados</small>
+          </div>
+
+          <div class="footer-links">
+            <h4>Legal</h4>
+            <a href="/Documentos/3.politica-privacidad.pdf"
+              >Política de Privacidad</a
+            >
+            <a href="LeyDeProteccionDeDatos/Beneficiario+final+BCP.pdf"
+              >Términos y Condiciones</a
+            >
+            <a href="LeyDeProteccionDeDatos/obtenerDocumento.pdf"
+              >Protección de Datos</a
+            >
+          </div>
+
+          <div class="footer-social">
+            <h4>Síguenos</h4>
+            <a href="#">
+              <img
+                src="https://cdn-icons-png.flaticon.com/512/145/145802.png"
+                alt="Facebook"
+                class="social-icon"
+              />
+            </a>
+            <a href="#">
+              <img
+                src="https://cdn-icons-png.flaticon.com/512/145/145812.png"
+                alt="Instagram"
+                class="social-icon"
+              />
+            </a>
+            <a href="#">
+              <img
+                src="https://cdn-icons-png.flaticon.com/512/145/145807.png"
+                alt="LinkedIn"
+                class="social-icon"
+              />
+            </a>
+            <a href="#">
+              <img
+                src="https://cdn-icons-png.flaticon.com/512/145/145806.png"
+                alt="Twitter"
+                class="social-icon"
+              />
+            </a>
+          </div>
+        </div>
+      </footer>
+    </section>
+    <!--referenciando a el archivo menu-toggle.js siempre al final-->
+    <script src="menu_toggle.js"></script>
+  </body>
+</html>
